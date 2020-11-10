@@ -1,0 +1,14 @@
+<h1>All the tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <%= link_to task.title, task_path(task) %>
+    <div class="form-check inline">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+      </label>
+    </div>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new task", tasks_new_path %>

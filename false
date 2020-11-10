@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20201110171921_default_value_to_task.rb
